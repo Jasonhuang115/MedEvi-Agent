@@ -1,0 +1,25 @@
+# LoRA微调配置文件 (mlx-lm v0.31.3 格式)
+model: "models/Qwen2.5-1.5B-Instruct"
+data: "data/"
+train: true
+
+# LoRA参数（新版使用lora_parameters字典，scale替代alpha）
+# scale = alpha / rank, 这里 rank=8, scale=2.0 相当于老的 alpha=16
+lora_parameters:
+  rank: 8
+  dropout: 0.1
+  scale: 2.0
+
+# 训练参数（防过拟合配置）
+batch_size: 1
+iters: 300
+learning_rate: 5e-6
+steps_per_report: 10
+steps_per_eval: 50
+val_batches: 4
+save_every: 100
+grad_accumulation_steps: 2
+max_seq_length: 1536
+
+# 输出
+adapter_path: "adapters_v3"

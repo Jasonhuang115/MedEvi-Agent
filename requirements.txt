@@ -1,0 +1,23 @@
+# Core Framework
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-community>=0.3.0
+
+# LLM API (DeepSeek via OpenAI-compatible API)
+openai>=1.0.0
+
+# Vector Database & Retrieval
+chromadb>=0.5.0
+sentence-transformers>=2.2.0
+cohere>=5.0.0
+
+# API & Utils
+requests>=2.31.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Frontend
+streamlit>=1.38.0
+
+# LangSmith Tracing (可选)
+langsmith>=0.1.0
