@@ -281,6 +281,12 @@ if run_btn:
                 st.caption(f"{icon} {label}: {detail}")
 
         st.session_state.result_state = result
+        # 管线完成后，保存数据供 Tab 4 使用 + 清空旧对话
+        st.session_state.extracted_picos = result.get("extracted_picos", [])
+        st.session_state.quantitative_outcomes = result.get("quantitative_outcomes", [])
+        st.session_state.screened_papers = result.get("screened_papers", [])
+        st.session_state.pipeline_query = result.get("query", "")
+        st.session_state.chat_history = []
 
 # ═══════════════════════════════════════════════════════════
 # Results display
@@ -288,7 +294,7 @@ if run_btn:
 result = st.session_state.result_state
 
 if result:
-    tab1, tab2, tab3 = st.tabs(["文献概览", "数据提取", "证据评级"])
+    tab1, tab2, tab3, tab4 = st.tabs(["文献概览", "数据提取", "证据评级", "对话分析"])
 
     # ──────────────────────────────────────────────
     # Tab 1: Literature overview (card-based)
@@ -494,6 +500,93 @@ if result:
             st.download_button("下载证据报告 MD", report, "grade_report.md", "text/markdown")
         else:
             st.info("暂无GRADE报告")
+
+    # ──────────────────────────────────────────────
+    # Tab 4: Chat Agent — 对话分析
+    # ──────────────────────────────────────────────
+    with tab4:
+        st.subheader("研究结果对话分析")
+
+        report = result.get("grade_report", "")
+        if not report:
+            st.info("请先运行分析管线，然后在此追问结果。")
+        else:
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                q = st.session_state.get("pipeline_query", "")
+                st.caption(f"当前分析: {q}" if q else "")
+            with col2:
+                if st.button("清空对话", key="clear_chat"):
+                    st.session_state.chat_history = []
+                    st.rerun()
+
+            # 初始化对话历史
+            if "chat_history" not in st.session_state:
+                st.session_state.chat_history = []
+
+            # 显示历史消息
+            for turn in st.session_state.chat_history:
+                with st.chat_message("user"):
+                    st.write(turn["user"])
+                with st.chat_message("assistant"):
+                    st.markdown(turn.get("assistant", ""))
+                    if turn.get("tool_logs"):
+                        with st.expander(
+                            f"推理过程（{len(turn['tool_logs'])} 步）",
+                            expanded=False,
+                        ):
+                            for log in turn["tool_logs"]:
+                                st.caption(
+                                    f"第{log['round']}步: `{log['tool']}`"
+                                )
+                                st.text(log.get("result_summary", "")[:300])
+
+            # 输入框
+            user_input = st.chat_input(
+                "追问分析结果，如：'有哪些研究类型？''排除Meta分析后结论会变吗？'"
+            )
+            if user_input:
+                with st.chat_message("user"):
+                    st.write(user_input)
+
+                with st.chat_message("assistant"):
+                    with st.spinner("思考中..."):
+                        from agents.chat_agent import chat_response
+
+                        pipeline_context = {
+                            "extracted_picos": st.session_state.get(
+                                "extracted_picos", []
+                            ),
+                            "quantitative_outcomes": st.session_state.get(
+                                "quantitative_outcomes", []
+                            ),
+                            "screened_papers": st.session_state.get(
+                                "screened_papers", []
+                            ),
+                            "grade_report": report,
+                            "query": st.session_state.get("pipeline_query", ""),
+                        }
+                        reply, tool_logs = chat_response(
+                            user_input,
+                            pipeline_context,
+                            st.session_state.chat_history,
+                        )
+                    st.markdown(reply)
+                    if tool_logs:
+                        with st.expander(
+                            f"推理过程（{len(tool_logs)} 步）", expanded=False
+                        ):
+                            for log in tool_logs:
+                                st.caption(
+                                    f"第{log['round']}步: `{log['tool']}`"
+                                )
+                                st.text(log.get("result_summary", "")[:300])
+
+                st.session_state.chat_history.append({
+                    "user": user_input,
+                    "assistant": reply,
+                    "tool_logs": tool_logs,
+                })
 
     if result.get("error"):
         st.error(result["error"])

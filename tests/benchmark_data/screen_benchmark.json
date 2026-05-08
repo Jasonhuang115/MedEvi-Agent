@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "dataset": "MedEvi-Agent Screen Benchmark",
+    "version": "0.1",
+    "created": "2026-05-02",
+    "total_samples": 16,
+    "queries": [
+      {
+        "query_id": "Q001",
+        "snp": "TP53 rs1042522",
+        "disease": "gastric cancer"
+      },
+      {
+        "query_id": "Q002",
+        "snp": "MTHFR rs1801133",
+        "disease": "ischemic stroke"
+      },
+      {
+        "query_id": "Q003",
+        "snp": "TNF rs1800629",
+        "disease": "inflammatory bowel disease"
+      }
+    ],
+    "annotation_guide": {
+      "Include": "研究涉及目标SNP和疾病、含原始数据、非纯综述、摘要信息足够",
+      "Exclude": "不涉及目标SNP/疾病、纯综述/meta/病例报告、动物实验、信息严重不足"
+    },
+    "annotated": "2026-05-02",
+    "annotator": "user"
+  },
+  "samples": [
+    {
+      "abstract_id": "Q001_32651972",
+      "query_id": "Q001",
+      "query_snp": "TP53 rs1042522",
+      "query_disease": "gastric cancer",
+      "pmid": "32651972",
+      "title": "Association of polymorphisms in TP53 and the promoter region of IL10 with gastric cancer in a Kazakh population.",
+      "abstract": "The emerging evidence indicates that single nucleotide polymorphisms (SNPs) of the tumor necrosis factor (TNF), interleukin 10 (IL10), tumor protein p53 (TP53), and cluster of differentiation 14 (CD14) genes may determine individual susceptibility to gastric cancer (GC). We aimed to investigate the associations for polymorphisms of the TNF, IL10, TP53, and CD14 genes in a population of Kazakhs, to identify potential risk or protective associations of the SNPs with GC. A case group of 143 patients hospitalized for GC was enrolled. Controls were 355 volunteers with no history of any cancer and frequency matched with cases by age. Differences in proportions for categorical variables and the assessment of genotypic frequencies conforming to the Hardy-Weinberg equilibrium law were evaluated by the Chi-square test. Associations between genetic polymorphisms and the risk of GC were estimated by regression analysis. For genetic analysis, three genetic models (additive, dominant, and recessive) were used. Four significant associations were found. The SNPs rs1042522 of TP53 and rs1800896 of IL10 were risk factors for GC by the additive model. Two polymorphisms of IL10 were protective of GC, namely, rs1800872 by additive model and rs1800871 by recessive model. No signiﬁcant associations were observed between the TNF and CD14 polymorphisms and GC. The polymorphisms TP53 rs1042522 and IL10 rs1800896 are associated with GC risk, while the polymorphisms IL10 rs1800872 and rs1800871 are protective of GC in the population of Kazakhs.",
+      "ground_truth": "Include",
+      "reason": "研究涉及 TP53 rs1042522 与胃癌的关联，且包含了足够的原始数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q001_30551681",
+      "query_id": "Q001",
+      "query_snp": "TP53 rs1042522",
+      "query_disease": "gastric cancer",
+      "pmid": "30551681",
+      "title": "Association between Polymorphisms in Inflammatory Response-Related Genes and the Susceptibility, Progression and Prognosis of the Diffuse Histological Subtype of Gastric Cancer.",
+      "abstract": "The chronic inflammatory microenvironment and immune cell dysfunction have been described as critical components for gastric tumor initiation and progression. The diffuse subtype is related to poor clinical outcomes, pronounced inflammation, and the worst prognosis. We investigated the association of polymorphisms in inflammatory response-related genes (COX-2, OGG1, TNFB, TNFA, HSPA1L, HSPA1B, VEGFA, IL17F, LGALS3, PHB, and TP53) with gastric cancer susceptibility, progression and prognosis in a Brazilian sample, focusing on the diffuse subtype. We also performed the analysis regarding the total sample of cases (not stratified for tumor subtypes), allowing the comparison between the findings. We further investigated the polymorphisms in linkage disequilibrium and performed haplotype association analyses. In the case-control study, rs1042522 (TP53) was associated with a stronger risk for developing gastric cancer in the sample stratified for diffuse subtype patients when compared to the risk observed for the total cases; CTC haplotype (rs699947/rs833061/rs2010963 VEGFA) was associated with risk while rs699947 was associated with protection for gastric malignancy in the total sample. Regarding the associations with the clinicopathological features of gastric cancer, for the diffuse subtype we found that rs699947 and rs833061 (VEGFA) were associated with outcomes related to a worse progression while rs5275 (COX-2), rs909253 (TNFB), and rs2227956 (HSPA1L) were associated to a better progression of the disease. In the total sample, rs699947 and rs833061 (VEGFA), rs4644 (LGALS3), and rs1042522 (TP53) were able to predict a worse progression while rs5275 (COX-2), rs2227956 (HSPA1L), and rs3025039 (VEGFA) a better progression. Besides, rs909253 (TNFB) predicted protection for the overall and disease-free survivals for gastric cancer. In conclusion, these results helped us to clarify the potential role of these polymorphisms in genes involved in the modulation of the inflammatory response in the pathogenesis of gastric cancer.",
+      "ground_truth": "Include",
+      "reason": "研究探讨了 TP53 rs1042522 等多种基因多态性与胃癌的关系，且包含足够的原始数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q001_25479941",
+      "query_id": "Q001",
+      "query_snp": "TP53 rs1042522",
+      "query_disease": "gastric cancer",
+      "pmid": "25479941",
+      "title": "Genetic association of single nucleotide polymorphisms in P53 pathway with gastric cancer risk in a Chinese Han population.",
+      "abstract": "The tumor suppressor gene P53 plays an important role in carcinogenesis, and the P53 pathway is central both in reducing cancer frequency and in mediating the response of cancer therapies. MDM2, MDM4 and Hausp genes are all critical regulators of the tumor suppressor P53. Many studies have evaluated the association of single nucleotide polymorphisms (SNPs) in P53 pathway with the risk of common cancers. However, the results are still inconclusive. In this work, we analyzed the association of SNPs in P53 (rs1042522), MDM2 (rs2279744), MDM4 (rs1380576) and Hausp (rs1529916) genes with gastric cancer in a hospital-based Chinese Han population (642 cases and 720 cancer-free controls). We found that the polymorphisms of P53 (rs1042522) and MDM2 (rs2279744) are associated with gastric cancer risk, whereas no significant association was observed between variant genotype of other two polymorphisms (MDM4 rs1380576 and Hausp rs1529916) and gastric cancer risk.",
+      "ground_truth": "Include",
+      "reason": "研究涉及 P53 通路中的 SNP（包括 TP53）与胃癌风险的关系，且摘要信息完整",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q001_24534481",
+      "query_id": "Q001",
+      "query_snp": "TP53 rs1042522",
+      "query_disease": "gastric cancer",
+      "pmid": "24534481",
+      "title": "Association between TLR2, MTR, MTRR, XPC, TP73, TP53 genetic polymorphisms and gastric cancer: a meta-analysis.",
+      "abstract": "OBJECTIVE: The aim of our meta-analyses is to test the association between six genetic polymorphisms and gastric cancer. METHODS: A systematic search was performed for all the available candidate genes and gastric cancer among several online databases including PubMed, Embase, Web of Science, the Cochrane Library, CNKI and Wanfang online libraries. After a comprehensive screening, a total of six genes were harvested for the current meta-analyses. These genes include TLR2 (-196 to -174 ins>del), MTR (rs1805087), MTRR (rs1801394), XPC (rs2228001), TP73 (G4C14-A4T14), and TP53 (rs1042522). RESULTS: Altogether 49 comparative studies among 11 776 cases and 18 633 controls were involved in our meta-analyses. TP53 rs1042522 polymorphism was shown to be associated with gastric cancer risk under the dominant model (P=0.02, OR=1.03, 95% CI=1.00-1.05). A subgroup meta-analysis indicated a significant association under dominant model between TP53 rs1042522 and gastric cancer in the Eastern Asians (P=0.03, OR=1.17, 95%=1.02-1.34). CONCLUSIONS: These results suggest that TP53 rs1042522 polymorphism might contribute to the susceptibility of gastric cancer under the dominant model, especially in Eastern Asians.",
+      "ground_truth": "Include",
+      "reason": "这是一个元分析，涉及 TP53 相关多态性与胃癌的关系，且提供了足够的数据和分析",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q002_39608496",
+      "query_id": "Q002",
+      "query_snp": "MTHFR rs1801133",
+      "query_disease": "ischemic stroke",
+      "pmid": "39608496",
+      "title": "High penetrance and phenotypic landscape of methylenetetrahydrofolate reductase c.665 C>T polymorphism in the absence of folate fortification.",
+      "abstract": "BACKGROUND: Studies have linked the methylenetetrahydrofolate reductase (MTHFR) c.665C > T (rs1801133) with hyperhomocysteinemia. Mandatory folate fortification nullified this association. However, its relevance persists in regions with no folate fortification resulting in a relatively low frequency of this variant in healthy population. This study explored the MTHFR variant's association with 50 clinical manifestations in the absence of folate fortification. METHODS: We performed mutation analysis via whole exome and Sanger sequencing in 2431 cases and 1265 healthy controls and the food frequency-based dietary folate intake assessment. RESULTS: The cohort's average dietary folate intake was 373 ± 141 μg/day. MTHFR rs1801133 variant demonstrated ≥4.49-fold increased risk for respiratory distress, recurrent pregnancy loss (RPL), ischemic stroke, autism, global developmental delay, dysplasia, myoclonic jerks, intellectual disability, aggressive behavior, motor delay, Alzheimer's, cerebellar atrophy, failure to thrive, cerebral atrophy, increased tendon reflexes, and spasticity (p < 0.0001). MTHFR T-allele showed 1.81-4.04 folds increased risk for mental retardation, behavioral problems, dystonia, anemia, gait abnormality, hypotonia, recurrent pneumonia, liver disease, cerebral palsy, short stature, hyperactivity, and cognitive decline. The association of this variant with seizures was moderate (OR: 1.51, 95 % CI: 1.13-2.02, p = 0.009). MTHFR TT-genotype was associated with a 5.81-fold risk for the abnormal phenotype (95 % CI: 1.39-24.28, p = 0.005). MTHFR T-allele was associated with low 25-hydroxy vitamin D, Ferritin, TIBC, and elevated total cholesterol. CONCLUSION: The MTHFR rs1801133 increases the risk for RPL, developmental milestones, neuronal development, autism, ischemic stroke, and late-onset neurological functions. The MTHFR TT-genotype is strongly associated with abnormal phenotypes.",
+      "ground_truth": "Include",
+      "reason": "研究涉及 MTHFR rs1801133 与缺血性中风的关系，包含详细的原始数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q002_38167461",
+      "query_id": "Q002",
+      "query_snp": "MTHFR rs1801133",
+      "query_disease": "ischemic stroke",
+      "pmid": "38167461",
+      "title": "Association study between genetic polymorphisms in MTHFR and stroke susceptibility in Egyptian population: a case-control study.",
+      "abstract": "Stroke is a major global disability cause, and genetic variables for multifactorial illnesses like stroke are crucial for precision medicine. The purpose of this study is to see if genetic variants in the MTHFR gene are associated with a higher risk of ischemic stroke among the Egyptian population. A case-control study was conducted at Mansoura University Hospital, involving 100 stroke patients and 150 healthy volunteers as the control group. Peripheral blood genomic DNA was isolated and single-nucleotide polymorphisms were genotyped using ARMS-PCR. The CT and TT genotypes of the C677T gene polymorphism exhibited substantial risks for having stroke disease [(OR 3.856; P ≤ 0.001); (OR 4.026; P ≤ 0.001), respectively]. The T allele was significantly more prevalent among patients compared to controls. (OR 2.517; (P = 0.001)). The over-dominant and dominant models demonstrated a substantial relationship between stroke groups at risk of developing stroke but not the Recessive model. An extensive connection was found between the MTHFR A1298C and stroke danger in three different inheritance models: dominant (CC + CA vs. AA), over-dominant (AA + CC vs AC), and allelic (C allele) (P < 0.001). A highly significant difference in blood pressure, total cholesterol, and triglycerides levels was found between patients and control. While there was no meaningful link discovered between genetic polymorphism with SBP, DBP, TG, LDL, VLDL among stroke group (P > 0.05 for each) except the CC genotype that was significantly associated with lower levels of TC and HDL when compared to CT + TT genotypes. The study evaluates a strong link among MTHFR mutations in genes and the probability to get stroke. The research significantly supports the use of MTHFR ((rs1801133) and (rs1801131) variations in stroke prediction.",
+      "ground_truth": "Include",
+      "reason": "研究探讨了 MTHFR rs1801133 多态性与缺血性中风的关联，且包含原始数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q002_37204128",
+      "query_id": "Q002",
+      "query_snp": "MTHFR rs1801133",
+      "query_disease": "ischemic stroke",
+      "pmid": "37204128",
+      "title": "Dual effect of methylene-tetrahydrofolate reductase and angiotensinconverting enzyme gene polymorphisms on the risk of acute ischemic stroke.",
+      "abstract": "Ischemic stroke, a prevalent neurological disease, is the major reason of serious disability and death worldwide. Methylenetetrahydrofolate reductase (MTHFR) gene polymorphisms increase homocysteine levels which also raise the risk of vascular diseases. Angiotensin-converting enzyme (ACE) gene polymorphisms can cause vascular reorganization and disrupt arterial wall stability. The aim of this study was to explore how the MTHFR and ACE gene polymorphisms are related to acute ischemic stroke. A total of 200 individuals (102 acute ischemic stroke patients and 98 healthy controls) were included in this case-control research. MTHFR gene C677T (rs1801133) and A1298C (rs1801131) polymorphisms were studied through polymerase chain reaction (PCR) and restriction fragment length polymorphism (RFLP) assays, ACE gene I/D polymorphism (rs1799752) was studied by PCR. The MTHFR C667T and ACE I/D polymorphisms did not show any statistically meaningful differences between healthy controls and acute ischemic stroke patients (P>0.05). However, compared to healthy controls, acute ischemic stroke patients had almost nine-fold higher prevalence of the CC genotype based on the MTHFR A1298C polymorphism (P=0.024, OR=8.8, 95%Cl=1.27-208.2). Additionally, individuals with acute ischemic stroke had greater frequencies of the combined genotypes of MTHFR and ACE gene polymorphisms in the forms of CC/CC (C667T/A1298C), CC/ DD (A1298C/ACE I/D) and CC/CC/DD (C677T/A1298C/ACE I/D) (P = 0.027, P = 0.015 and P = 0.037, respectively). A statistically significant correlation was assessed between MTHFR gene A1298C polymorphism and acute ischemic stroke. Additionally, it was discovered that the genotype combinations of CC/CC (C667T/A1298C), CC/DD (A1298C/ACE I/D) and CC/CC/DD (C677T/A1298C/ ACE I/D) have risk-increasing effects on acute ischemic stroke. To employ these genetic variations as alternative treatments for ischemic stroke, these findings should be validated by more research.",
+      "ground_truth": "Include",
+      "reason": "研究涉及 MTHFR rs1801133 与缺血性中风的关系，且有相关数据支持",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q002_36685916",
+      "query_id": "Q002",
+      "query_snp": "MTHFR rs1801133",
+      "query_disease": "ischemic stroke",
+      "pmid": "36685916",
+      "title": "Association of methylenetetrahydrofolate reductase (MTHFR) rs1801133 (677C>T) gene polymorphism with ischemic stroke risk in different populations: An updated meta-analysis.",
+      "abstract": "Background: Recently, increasing evidence has implicated methylenetetrahydrofolate reductase (MTHFR) gene mutation as a risk factor for ischemic stroke (IS) in the general population. However, studies have been inconclusive and lack evidence on specific populations. We aim to determine whether the rs1801133 (NC_000001.11 (MTHFR):g. 677C>T (p.Ala222Val) variant, we termed as MTHFR rs1801133 (677 C>T), is linked to an increased risk of IS in different age groups and ancestry groups. Methods: The literature relevant to our study was found by searching the PubMed, Cochrane Library, Web of Science, EMBASE, and CNKI databases. A random effect model analysis was used to calculate the pooled odds ratio (OR) and 95% confidence interval (CI) to evaluate any possible association. We conducted a subgroup analysis based on the age and ancestry groups of the included populations. Results: As of March 2022, 1,925 citations had been identified in electronic databases, of which 96 studies involving 34,814 subjects met our eligibility criteria. A strong link was found between IS and the MTHFR gene rs1801133 (677C>T) polymorphism in all genetic models [dominant genetic model (OR = 1.47; 95%CI = 1.33-1.61; p < 0.001), recessive genetic model (OR = 1.52; 95%CI = 1.36-1.71; p < 0.001), heterozygous model (OR = 1.36; 95%CI = 1.24-1.48; p < 0.001), homozygous model (OR = 1.82; 95%CI = 1.58-2.11; p < 0.001), and T allelic genetic model (OR = 1.37; 95%CI = 1.27-1.48; p < 0.001)]. Further subgroup analyses indicated that the MTHFR rs1801133 (677C>T) variant may increase the risk of IS in Asian, Hispanic, or Latin population, middle-aged, and elderly populations (p < 0.001). Conclusion: Our results implied that mutation of the T allele of MTHFR rs1801133 (677C>T) could be a risk factor for IS. A significant association was found among Asian, Hispanic, or Latin population, middle-aged, and elderly people.",
+      "ground_truth": "Include",
+      "reason": "研究关注 MTHFR rs1801133 与缺血性中风的关联，并包含了足够的原始数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q002_36193932",
+      "query_id": "Q002",
+      "query_snp": "MTHFR rs1801133",
+      "query_disease": "ischemic stroke",
+      "pmid": "36193932",
+      "title": "Large-Scale Targeted Sequencing Study of Ischemic Stroke in the Han Chinese Population.",
+      "abstract": "Background Ischemic stroke is likely caused by interactions of multiple genes and environmental determinants. However, large-scale sequencing studies to discern functional genetic variants and their interactions with clinical and lifestyle risk factors on ischemic stroke are limited. Methods and Results We sequenced functional regions of 740 previously identified genes associated with atherosclerotic disease among 999 ischemic stroke cases and 1001 controls of Chinese ancestry. Multiple logistic regression models were used to examine the associations between variants and ischemic stroke and test interactions between variants and clinical and lifestyle risk factors. Functional variants achieving suggestive significance were replicated in an independent sample of 4724 ischemic stroke cases and 5029 controls. Driven by variant main effects, each minor allele of the correlated rs174535, rs174545, and rs3834458 variants at MYRF-FADS1-FADS2 conferred an average 0.83-fold (95% CI, 0.78-0.88) decreased odds of stroke. Significant main effects of MTHFR rs1801133 missense variant were also observed, with each copy of the A allele associated with a 1.20-fold (95% CI, 1.13-1.27) higher odds of ischemic stroke. The functional ALDH2 rs671 variant was identified in interaction analyses with alcohol drinking (Meta-P=3.39×10-17). Each minor allele conferred a 0.54-fold (95% CI, 0.45-0.64) decreased odds of stroke among drinkers and a 0.89-fold (95% CI, 0.83-0.97) decreased odds among nondrinkers. Conclusions Significant associations at MYRF-FADS1-FADS2 indicate that genetically elevated polyunsaturated fatty acids may decrease ischemic stroke risk in East Asians. Significant associations at MTHFR and ALDH2 robustly confirm deleterious effects of genetically elevated homocysteine and alcohol intake, respectively, on ischemic stroke.",
+      "ground_truth": "Include",
+      "reason": "该研究通过大规模靶向测序分析 MTHFR rs1801133 与缺血性中风的关系，数据丰富",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q002_34979665",
+      "query_id": "Q002",
+      "query_snp": "MTHFR rs1801133",
+      "query_disease": "ischemic stroke",
+      "pmid": "34979665",
+      "title": "Cryptogenic Stroke in the Young: Role of Candidate Gene Polymorphisms in Indian Patients with Ischemic Etiology.",
+      "abstract": "CONTEXT: Strokes that remain without a definite cause even after an extensive workup, termed cryptogenic strokes, constitute up to 30-40% of ischemic strokes (ISs) in the young. Some of them can have a genetic basis. However, the well-established genetic causes account for only a small percentage of these cases. AIM: To evaluate the association of cryptogenic young IS with 16 candidate gene polymorphisms. SETTINGS AND DESIGN: A case-control study with cryptogenic young IS patients (South and North Indians; n = 105) and age, sex, and ethnicity-matched controls (n = 215). SUBJECTS AND METHODS: Genotyping was carried out by PCR-RFLP method using DNA extracted from the blood. STATISTICAL ANALYSIS USED: Association of the genotypes with the disease was studied using Chi-square test. RESULTS: MTHFR rs1801133 and KNG1 rs710446 showed significant statistical association with cryptogenic young IS (P = 0.0261 and 0.0157, respectively) in the Indian population. Significant association of KNG1 rs710446 (P 0.0036) and FXII rs1801020 (P 0.0376) with cryptogenic young stroke in South Indian males, SERPINC1 rs2227589 in South Indian female patients (P = 0.0374), and CYP4V2 rs13146272 in North Indian males (P = 0.0293) was observed. CONCLUSIONS: Our study indicates that in the Indian population MTHFR rs1801133, KNG rs710446, FXII rs1801020, SERPINC1 rs2227589, CYP4V2 rs13146272, and FXIII V34L may be significant risk factors for cryptogenic IS in the young. In addition, ethnicity and gender play a significant role. Further studies with larger sample size are required to completely establish these polymorphisms as risk factors for cryptogenic IS in young Indians.",
+      "ground_truth": "Include",
+      "reason": "研究关注 MTHFR rs1801133 与缺血性中风的关系，包含原始数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q003_41177117",
+      "query_id": "Q003",
+      "query_snp": "TNF rs1800629",
+      "query_disease": "inflammatory bowel disease",
+      "pmid": "41177117",
+      "title": "IL-6 and TNF variants as potential determinants of perianal disease in Crohn's patients: a pilot study.",
+      "abstract": "Perianal Crohn's disease (pCD) is a debilitating complication of Crohn's disease (CD), affecting approximately 20 % of patients. Genetic polymorphisms in cytokine-related and intracellular signaling pathway genes may influence pCD development, yet data on their role remain limited. To evaluate the association between specific single nucleotide polymorphisms (SNPs) in cytokine (TNF, IL-6, IL-10, TGF-β) and MAPK pathway-related genes (RAS, RAF-1, ERK) and the pCD development. This retrospective study included 204 CD patients from a single center, of whom 34 had documented pCD. Clinical, phenotypic, and treatment data were collected. Genotyping was performed by real-time PCR and ARMS-PCR. IL-6 -597 GG genotype was significantly associated with a reduced risk of pCD (p = 0.049). TNF rs1800629-308 GA genotype showed a trend toward protection (p = 0.07). IL-10 -1082 AA genotype showed a non-significant trend toward increased risk (p = 0.07). No significant associations were found for TGF-β or MAPK-related polymorphisms. Our findings suggest that polymorphisms in cytokine genes, particularly IL-6 and TNF, may influence the risk of developing perianal complications in CD. These preliminary results warrant validation in larger cohorts to assess their potential as predictive biomarkers for personalized management of pCD.",
+      "ground_truth": "Exclude",
+      "reason": "该研究关注的是 IL-6 和 TNF 的基因变异与克罗恩病的外科症状（特定病例），与目标疾病关系不明确",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q003_40149645",
+      "query_id": "Q003",
+      "query_snp": "TNF rs1800629",
+      "query_disease": "inflammatory bowel disease",
+      "pmid": "40149645",
+      "title": "Genetic Polymorphisms on TNFA, TNFRSF1A, and TNFRSF1B Genes Predict the Effectiveness of Anti-TNF-α Treatment in Inflammatory Bowel Disease Patients.",
+      "abstract": "Background/Objectives: Tumor necrosis factor alpha (TNF-α) is the key inflammatory cytokine involved in the pathogenesis of inflammatory bowel diseases (IBDs). Anti-TNF-α therapy has been successfully used for IBD treatment, although the therapeutic response differs among patients due to the genetic background. The aim of this study was to investigate whether the presence of single nucleotide polymorphisms (SNPs) on TNFA, TNFRSF1A, and TNFRSF1B genes could affect anti-TNF-α treatment effectiveness in IBD patients. Methods: In this prospective cohort study, 83 European IBD patients treated with infliximab or adalimumab (with or without steroid bridge therapy) as first-line therapy were enrolled. Genomic DNA was extracted from peripheral blood, and TNF-α (rs1800629, rs361525, rs1799724), TNFRSF1A (rs767455), and TNFRSF1B (rs1061622, rs1061624, rs3397, rs976881) SNPs were assessed. Steroid-free remission (SFR) (clinical remission together with steroid interruption) and anti-TNF-α therapy persistence after 12 months of follow-up were evaluated. Patients who stopped anti-TNF-α therapy before the end of follow-up, due to side effects or treatment failure, were defined as discontinuers. Results: A higher frequency of the G/G genotype in rs1800629 and the A/A genotype in rs1061624 was observed in the SFR group compared to non-SFR (97.7% vs. 82.8%; p = 0.025 and 32.6% vs. 10.3%; p = 0.029, respectively). Moreover, carriers of the A/A genotype in rs361525 and the C/C genotype in rs767455 had a lower probability of achieving SFR than wild-type patients (OR = 0.14; 95% CI= 0.03-0.69; p = 0.016 and OR = 0.10; 95% CI = 0.02-0.60; p = 0.012, respectively). Furthermore, an increased frequency of rs1800629 A allele was observed in patients who discontinued treatment compared to completers (27.3% vs. 6.9%; p = 0.033), as well as a high risk of interrupting therapy (HR = 6.47; 95% CI = 1.15-36.38). Conclusions: These results suggest that the evaluation of SNPs in TNF-α, TNFR1A, and TNFR1B genes could improve the management of IBD, leading to more effective, individualized treatment plans and a reduction in healthcare costs associated with ineffective therapies and disease complications.",
+      "ground_truth": "Include",
+      "reason": "研究探讨了 TNF 基因多态性与炎症性肠病的关系，且包含了足够的原始数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q003_38891983",
+      "query_id": "Q003",
+      "query_snp": "TNF rs1800629",
+      "query_disease": "inflammatory bowel disease",
+      "pmid": "38891983",
+      "title": "The Association between Genetics and Response to Treatment with Biologics in Patients with Psoriasis, Psoriatic Arthritis, Rheumatoid Arthritis, and Inflammatory Bowel Diseases: A Systematic Review and Meta-Analysis.",
+      "abstract": "Genetic biomarkers could potentially lower the risk of treatment failure in chronic inflammatory diseases (CID) like psoriasis, psoriatic arthritis (PsA), rheumatoid arthritis (RA), and inflammatory bowel disease (IBD). We performed a systematic review and meta-analysis assessing the association between single nucleotide polymorphisms (SNPs) and response to biologics. Odds ratio (OR) with 95% confidence interval (CI) meta-analyses were performed. In total, 185 studies examining 62,774 individuals were included. For the diseases combined, the minor allele of MYD88 (rs7744) was associated with good response to TNFi (OR: 1.24 [1.02-1.51], 6 studies, 3158 patients with psoriasis or RA) and the minor alleles of NLRP3 (rs4612666) (OR: 0.71 [0.58-0.87], 5 studies, 3819 patients with RA or IBD), TNF-308 (rs1800629) (OR: 0.71 [0.55-0.92], 25 studies, 4341 patients with psoriasis, RA, or IBD), FCGR3A (rs396991) (OR: 0.77 [0.65-0.93], 18 studies, 2562 patients with psoriasis, PsA, RA, or IBD), and TNF-238 (rs361525) (OR: 0.57 [0.34-0.96]), 7 studies, 818 patients with psoriasis, RA, or IBD) were associated with poor response to TNFi together or infliximab alone. Genetic variants in TNFα, NLRP3, MYD88, and FcRγ genes are associated with response to TNFi across several inflammatory diseases. Most other genetic variants associated with response were observed in a few studies, and further validation is needed.",
+      "ground_truth": "Exclude",
+      "reason": "研究主要集中于遗传标志物与治疗反应的关系，并未直接关注 TNF rs1800629 与炎症性肠病",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q003_31046486",
+      "query_id": "Q003",
+      "query_snp": "TNF rs1800629",
+      "query_disease": "inflammatory bowel disease",
+      "pmid": "31046486",
+      "title": "The study of methylation and single nucleotide polymorphisms of cancer-related genes in patients with early-stage ulcerative colitis.",
+      "abstract": "Aim: To investigate the methylation status and single nucleotide polymorphisms (SNPs) of cancer-associated genes in ulcerative colitis (UC) patients and explore the potential mechanism for high cancer risk of UC. Methods: A total of 103 patients were enrolled in our study, which included 30 healthy subjects, 41 patients with early-stage UC, and 32 patients with colorectal cancer (CRC). Methylation status of cyclooxygenase 2 (COX2) and human RUNT-related transcription factor 3 (RUNX3) genes in colonic mucosa from 3 groups of subjects were detected by methylation-specific polymerase chain reaction (PCR). The SNPs TNF-α rs1800629 and IL-1 rs1143627 were genotyped by PCR and direct sequencing. Results: The methylation rate of RUNX3 gene within CRC group was 35.7%, which was significantly higher than the other two groups (Healthy control 5.9%, UC 15.4%, p = .040). There was no significant difference in the methylation rate of RUNX3 between early-stage UC group and healthy control group (p = .633). The methylation rate of COX2 gene, the genotypes (GG, AG) and alleles (A, G) of rs1800629, and the genotypes (CC,CT,TT) and alleles (C,T) of rs1143627 were not statistically different among three groups. Conclusion: In the early stage of UC, the methylation rate of cancer-related genes RUNX3 and COX2 and SNPs TNF-α rs1800629 and IL-1 rs1143627 were not significantly different compared with healthy subjects. The methylation rate of RUNX3 in CRC increased, while the methylation rate of COX2 and SNPs TNF-α rs1800629 and IL-1 rs1143627 did not change significantly compared with the other two groups.",
+      "ground_truth": "Include",
+      "reason": "研究关注 TNF 基因的甲基化状态和 SNP 与溃疡性结肠炎的关系，且数据足够",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q003_28243990",
+      "query_id": "Q003",
+      "query_snp": "TNF rs1800629",
+      "query_disease": "inflammatory bowel disease",
+      "pmid": "28243990",
+      "title": "Associations between single-nucleotide polymorphisms and inflammatory bowel disease-associated colorectal cancers in inflammatory bowel disease patients: a meta-analysis.",
+      "abstract": "PURPOSE: To assess the correlation between single-nucleotide polymorphisms (SNPs) and inflammatory bowel disease (IBD)-associated colorectal cancer (CRC) in IBD patients. METHODS: A systematic search of PubMed, EmBase, and Cochrane databases was performed. Five genetic models (allelic, dominant, recessive, heterozygous and homozygous models) were used to analyze the associations, and trial sequential analysis was used to analyze the robustness of the results. RESULTS: We collected and analyzed the results of seven trials including a total of 2287 patients in our meta-analysis. A total of 8 SNPs were tested in IBD patients. For rs1800629 of TNF-α, the allelic model showed that polymorphism at this locus significantly increased the risk of IBD-associated CRC in IBD patients (OR 4.45, 95% CI 3.18-6.21, P < 0.001). The results also showed a significant association between rs1800629 and an IBD-associated CRC population (heterozygous model: OR 4.335, 95% CI 2.329-8.069, P < 0.001; homozygous model: OR 11.5, 95% CI 2.498-52.592, P = 0.002; dominant model: OR 4.986, 95% CI 2.754-9.026, P < 0.001; recessive model: OR 7.208, 95% CI 1.588-32.72, P = 0.01). Other studies have found that mutation of rs1143627 of IL1B (allelic model: OR 2.97; 95% CI 1.74-5.05, P < 0.001) and rs1050152 of OCTN1 (allelic model: OR 1.637, 95% CI 1.078-2.485, P = 0.021) increased the proportion of IBD-associated CRC in the population. Moreover, there were significant associations between IBD-associated CRC and ITLN rs2274910, gene desert rs1551398 and rs4871611, FCGR2A rs1801274, and S100-Z rs7712957 in the allelic model. CONCLUSION: Associations between SNPs and the proportion of IBD-associated CRC in IBD patients were examined, and further investigation of additional SNPs and their association with the risk of morbidity is needed.",
+      "ground_truth": "Include",
+      "reason": "研究涉及 TNF rs1800629 与炎症性肠病相关结直肠癌的关系，提供了足够的数据",
+      "difficulty": ""
+    },
+    {
+      "abstract_id": "Q003_27528546",
+      "query_id": "Q003",
+      "query_snp": "TNF rs1800629",
+      "query_disease": "inflammatory bowel disease",
+      "pmid": "27528546",
+      "title": "Tumour necrosis factor-alpha (-308G/A) promoter polymorphism is associated with ulcerative colitis in Brazilian patients.",
+      "abstract": "Inflammatory bowel disease consists of multifactorial diseases whose common manifestation is inflammation of the gastrointestinal tract and their pathogenesis remains unknown. This study aimed to analyse the gene polymorphisms in Brazilian patients with inflammatory bowel disease. A total of 101 patients diagnosed with inflammatory bowel disease were analysed for the tumour necrosis factor-alpha (-308 G/A; rs1800629) and interleukin-10 (-1082 G/A; rs1800896) gene polymorphisms. Genotyping was performed through polymerase chain reaction-sequence-specific primer, then fractionated on 2% agarose gel and visualized after staining by ethidium bromide. The anatomic-clinical form of Crohn's disease (CD) predominant was the inflammatory (32.75%), followed by fistulizing (29.31%) and 27.58% stricturing. As control group, a total of 136 healthy subjects, from the same geographical region, were enrolled. The statistical analyses were performed using R program. The frequency of the A allele at tumour necrosis factor-alpha was high in ulcerative colitis (UC) patients (51%) than in controls (22%; P > 0.01). No statistical difference was found with the genotypic and allelic frequencies of CD patients compared to controls (P = 0.54). The polymorphism -1082G/A of interleukin-10 was not statistical different between the diseases compared to controls. Tumour necrosis factor-alpha (TNF-α) (-308G/A) is associated with UC onset, suggesting that the presence of -308A allele could confer a relative risk of 3.62 more to develop UC in general population. Further studies, increasing the number of individuals, should be performed to ratify the role of TNF-α in the inflammatory bowel disease pathogenesis.",
+      "ground_truth": "Include",
+      "reason": "研究探讨了 TNF-α -308G/A 基因多态性与溃疡性结肠炎的关系，并且包含了原始数据",
+      "difficulty": ""
+    }
+  ]
+}
